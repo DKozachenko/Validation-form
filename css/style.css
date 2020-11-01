@@ -1,0 +1,121 @@
+html {
+  font-size:10px
+}
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing:border-box
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: url(../css/bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem;
+  border: 2px solid white;
+  border-radius: .5rem;
+}
+
+.form__title {
+  font-size: 3.5rem;
+  color: white;
+  line-height: 3.5rem;
+
+  margin-bottom: 3rem;
+}
+
+.form__content {
+  width: 100%;
+
+  margin-bottom: 1rem;
+}
+
+.form__content-row:not(:last-child) {
+  margin-bottom: .7rem;
+}
+
+.form__content-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+.form__content-row span {
+  margin-right: 2.5rem;
+
+  font-size: 1.8rem;
+  color: white;
+  line-height: 1.8rem;
+}
+
+.form__content-row input {
+  font-size: 1.5rem;
+  color: black;
+  line-height: 1.5rem; 
+
+  border-color: black;
+
+  outline: none;
+
+  width: 100%;
+  max-width: 30rem;
+}
+
+input[type="submit"] {
+  font-size: 1.5rem;
+  color: black;
+  line-height: 1.5rem;
+  padding: .6rem;
+
+  background: #e72822;
+  border: 2px solid black;
+  border-radius: .5rem;
+
+  transition: .2s all linear;
+}
+
+input[type="submit"]:hover {
+  background: red;
+}
+
+.warning {
+  position: absolute;
+  top: -50%;
+  left: calc(100% + 1.3rem);
+  z-index: 1;
+
+  width: 20rem;
+  height: 4rem;
+  background: white;
+  border: 2px solid red;
+  border-radius: 1rem;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.2  rem;
+}

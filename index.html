@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Form Validation</title>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#" class="form">
+      <h3 class="form__title">Контактная информация</h3>
+
+      <div class="form__content" id="form">
+        <div class="form__content-row">
+          <span>Имя</span>
+
+          <input type="text" placeholder="Имя" form="form" id="name" data-warn="1">
+
+          <div class="warning">Неполные данные или неправильный формат</div>
+        </div>
+
+        <div class="form__content-row">
+          <span>Телефон</span>
+
+          <input type="text" placeholder="+7-xxx-xxx-xx-xx" form="form" id="phone" data-warn="2">
+
+          <div class="warning">Неполные данные или неправильный формат</div>
+        </div>
+
+        <div class="form__content-row">
+          <span>Почта</span>
+
+          <input type="text" placeholder="x@x.x" form="form" id="mail" data-warn="3">
+
+          <div class="warning">Неполные данные или неправильный формат</div>
+        </div>
+      </div>
+
+      <input type="submit" form="form">
+    </form>
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
